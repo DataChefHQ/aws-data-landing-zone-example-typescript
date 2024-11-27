@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import {App} from 'aws-cdk-lib';
-import {config} from "./config";
+import {config} from "./minimum_config";
 import * as sns from 'aws-cdk-lib/aws-sns';
 import { DataLandingZone } from '@DataChefHQ/data-landing-zone';
 

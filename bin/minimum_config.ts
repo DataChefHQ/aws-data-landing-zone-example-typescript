@@ -24,11 +24,11 @@ export const config: DataLandingZoneProps = {
   securityHubNotifications: [
   ],
   organization: {
-    organizationId: 'o-05ev6vk6fa',
+    organizationId: 'RootOrganizationID',
     root: {
       accounts: {
         management: {
-          accountId: '882070149987',
+          accountId: 'YourRootAccountID',
         },
       },
       /* Optional, showing that controls can be changed, added or removed from the default
@@ -40,30 +40,30 @@ export const config: DataLandingZoneProps = {
     },
     ous: {
       security: {
-        ouId: 'ou-vh4d-lpyovlyp',
+        ouId: 'SecurityOrganizationUnitId',
         accounts: {
           log: {
-            accountId: '730335597466',
+            accountId: 'YourLogsAccountID',
           },
           audit: {
-            accountId: '851725452335',
+            accountId: 'YourAuditAccountID',
           },
         },
       },
       workloads: {
-        ouId: 'ou-vh4d-nc2zzf9z',
+        ouId: 'WorkloadOrganizationUnitId',
 
         // Small Org, all workloads/projects in the same accounts
         accounts: [
           {
             name: 'development',
-            accountId: '891377166347',
+            accountId: 'YourDevelopmentAccountID',
             type: DlzAccountType.DEVELOP,
           },
         ],
       },
       suspended: {
-        ouId: 'ou-vh4d-rhcmhzsy',
+        ouId: 'SuspendedOrganizationUnitId',
       },
     },
   },

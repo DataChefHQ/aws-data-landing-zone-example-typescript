@@ -14,7 +14,13 @@ The CDK construct is available in both TypeScript and Python.
 This repository demonstrates an example use case of the DLZ. For more 
 details and available options, visit [datalandingzone.com](https://datalandingzone.com).
 
-To review the basic required parameters, refer to the [config.ts](./bin/config.ts) file.
+## Configuration
+
+- To review the basic required parameters, refer to the [minimum_config.ts](./bin/minimum_config.ts) file.
+- For a more complete example, showing all the possible options,
+refer to [complete_config.ts](./bin/complete_config.ts) file.
+
+For a detailed documentation and available APIs, you can check the docs main website.
 
 ## Contributing 🤝
 
