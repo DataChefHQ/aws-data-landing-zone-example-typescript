@@ -18,9 +18,9 @@ export const config: DataLandingZoneProps = {
     project: ['accounting'],
     environment: ['development', 'staging', 'production'],
   },
-  defaultNotification: {
-  },
-  budgets: [],
+  budgets: [
+    ...Defaults.budgets(100, 20, {}),
+  ],
   securityHubNotifications: [
   ],
   organization: {
@@ -67,38 +67,6 @@ export const config: DataLandingZoneProps = {
       },
     },
   },
-  network: {
-    connections: {
-      vpcPeering: [
-      ],
-    },
-  },
-  iamIdentityCenter: {
-    arn: 'arn:aws:sso:::instance/ssoins-6804a208616635a6',
-    id: 'ssoins-6804a208616635a6',
-    storeId: 'd-936746b442',
-    users: [
-      {
-        userName: 'farbod@datachef.co',
-        name: 'Farbod',
-        surname: 'Ahmadian',
-      },
-    ],
-    permissionSets: [
-      // Provides the AWS managed policy `AdministratorAccess` and `ReadOnlyAccess` as permission sets
-      ...Defaults.iamIdentityCenterPermissionSets(),
-    ],
-    accessGroups: [
-      {
-        name: 'admin-access-group',
-        accountNames: ['*'],
-        userNames: [
-          'farbod@datachef.co',
-        ],
-        permissionSetName: 'AdministratorAccess',
-      },
-    ],
-  },
   deploymentPlatform: {
     gitHub: {
       references: [
@@ -109,6 +77,4 @@ export const config: DataLandingZoneProps = {
       ],
     },
   },
-  printReport: false,
-  printDeploymentOrder: true,
 };
