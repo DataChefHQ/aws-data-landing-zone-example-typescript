@@ -1,14 +1,25 @@
-# Welcome to your CDK TypeScript project
+# AWS Data Landing Zone Example
 
-This is a blank project for CDK development with TypeScript.
+The **Data Landing Zone (DLZ)** is a CDK construct designed to accelerate AI 
+and data-related projects. It provides an opinionated Landing Zone, laying 
+the foundation for a multi-account AWS strategy, allowing you to focus on 
+delivering data and AI solutions.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+The DLZ can be deployed in existing AWS Organizations or used in greenfield 
+projects. It supports setups ranging from small organizations with a few 
+accounts to large enterprises with hundreds of accounts.
 
-## Useful commands
+The CDK construct is available in both TypeScript and Python.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+This repository demonstrates an example use case of the DLZ. For more 
+details and available options, visit [datalandingzone.com](https://datalandingzone.com).
+
+To review the basic required parameters, refer to the [config.ts](./bin/config.ts) file.
+
+## Contributing 🤝
+
+We welcome contributions from the community! If you're interested in 
+contributing to DLZ, visit our [GitHub repository](https://github.com/DataChefHQ/recipes_data-landing-zone_data-landing-zone) 
+for more details on how to get involved.
+
+#### Made with ❤️ by [DataChef](https://datachef.co)
