@@ -4,11 +4,11 @@ import {
   DlzAccountType,
   DlzControlTowerStandardControls,
   Region,
-} from '@DataChefHQ/data-landing-zone';
+} from 'aws-data-landing-zone';
 
 
 export const config: DataLandingZoneProps = {
-  localProfile: '', // TODO: Not required; Will be optional from next release
+  localProfile: 'YourAwsProfileName', // Only used when running local scripts
   regions: {
     global: Region.EU_WEST_1,
     regional: [Region.US_EAST_1],

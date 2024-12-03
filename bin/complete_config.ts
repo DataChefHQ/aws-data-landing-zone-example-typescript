@@ -12,7 +12,7 @@ import {
     SlackChannel,
     TableAction,
     TagAction
-  } from '@DataChefHQ/data-landing-zone';
+  } from 'aws-data-landing-zone';
   import { aws_ec2 as ec2, aws_iam as iam } from 'aws-cdk-lib';
   
   const slackBudgetNotifications: SlackChannel = {
