@@ -2,7 +2,7 @@
 import {App} from 'aws-cdk-lib';
 import {config} from "./minimum_config";
 import * as sns from 'aws-cdk-lib/aws-sns';
-import { DataLandingZone } from '@DataChefHQ/data-landing-zone';
+import { DataLandingZone } from 'aws-data-landing-zone';
 
 const app = new App();
 const dlz = new DataLandingZone(app, config)
