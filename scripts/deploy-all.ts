@@ -4,7 +4,3 @@ import { config } from '../bin/minimum_config';
 (async () => {
   await (new Scripts()).deployAll(config);
 })();
-
-
-
-
